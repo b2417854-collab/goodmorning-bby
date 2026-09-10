@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Morning Bby ❤️</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  height:100vh;
+  overflow:hidden;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(#ffd6e7,#fff4c7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.sun{
+  position:absolute;
+  top:12%;
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  background:#ffd54f;
+  box-shadow:0 0 45px #ffb300;
+  animation:sunrise 4s infinite alternate;
+}
+
+@keyframes sunrise{
+  from{transform:translateY(30px)}
+  to{transform:translateY(-20px)}
+}
+
+.cloud{
+  position:absolute;
+  width:130px;
+  height:40px;
+  background:white;
+  border-radius:50px;
+  opacity:.8;
+  animation:move 12s linear infinite;
+}
+
+.cloud:before,.cloud:after{
+  content:"";
+  position:absolute;
+  background:white;
+  border-radius:50%;
+}
+
+.cloud:before{
+  width:55px;height:55px;
+  left:20px;top:-25px;
+}
+
+.cloud:after{
+  width:65px;height:65px;
+  right:15px;top:-35px;
+}
+
+.c1{top:18%;left:-150px}
+.c2{top:30%;left:-250px;animation-delay:4s}
+
+@keyframes move{
+  to{left:110%}
+}
+
+.card{
+  position:relative;
+  z-index:5;
+  width:88%;
+  max-width:380px;
+  padding:35px 22px;
+  text-align:center;
+  border-radius:30px;
+  background:rgba(255,255,255,.75);
+  box-shadow:0 10px 35px rgba(0,0,0,.15);
+  backdrop-filter:blur(8px);
+}
+
+h1{
+  color:#ff4f81;
+  font-size:35px;
+  margin:10px 0;
+}
+
+p{
+  color:#7a4055;
+  font-size:18px;
+  line-height:1.6;
+}
+
+button{
+  border:0;
+  padding:14px 25px;
+  border-radius:30px;
+  background:#ff5f8f;
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+}
+
+#message{
+  display:none;
+  margin-top:20px;
+  animation:pop .7s ease;
+}
+
+@keyframes pop{
+  from{transform:scale(.5);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+
+.heart{
+  position:absolute;
+  bottom:-30px;
+  font-size:25px;
+  animation:float 6s linear infinite;
+}
+
+@keyframes float{
+  0%{transform:translateY(0) rotate(0);opacity:1}
+  100%{transform:translateY(-110vh) rotate(360deg);opacity:0}
+}
+
+.h1{left:10%;animation-delay:1s}
+.h2{left:30%;animation-delay:3s}
+.h3{left:55%;animation-delay:0s}
+.h4{left:80%;animation-delay:2s}
+</style>
+</head>
+
+<body>
+
+<div class="sun"></div>
+<div class="cloud c1"></div>
+<div class="cloud c2"></div>
+
+<div class="card">
+  <div style="font-size:55px">🌸🌅🦋</div>
+
+  <h1>Good Morning Bby ❤️</h1>
+
+  <p>
+    Good morning mere bby 🥰<br>
+    Tumhari smile meri morning ko aur bhi beautiful bana deti hai 💕
+  </p>
+
+  <button onclick="showMessage()">💌 Tap Here</button>
+
+  <div id="message">
+    <p>
+      ❤️ Bas itna kehna hai...<br>
+      Apna khayal rakhna,<br>
+      khush rehna aur aaj bhi<br>
+      ek beautiful smile zaroor dena 😘🌸<br><br>
+      <b>Have a lovely day, Bby 💖</b>
+    </p>
+  </div>
+</div>
+
+<div class="heart h1">❤️</div>
+<div class="heart h2">💗</div>
+<div class="heart h3">💕</div>
+<div class="heart h4">💖</div>
+
+<script>
+function showMessage(){
+  document.getElementById("message").style.display="block";
+}
+</script>
+
+</body>
+</html>
