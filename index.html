@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Good Morning Bby ❤️</title>
 
@@ -223,7 +224,6 @@ button:active{
 .h3{left:55%;animation-delay:3s}
 .h4{left:80%;animation-delay:4.5s}
 
-/* Sparkle effect for hearts */
 .sparkle{
   position:absolute;
   pointer-events:none;
@@ -278,8 +278,6 @@ button:active{
 function showMessage(){
   const messageDiv = document.getElementById("message");
   messageDiv.style.display="block";
-  
-  // Create sparkles on button click
   createSparkles(event.clientX, event.clientY);
 }
 
